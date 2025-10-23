@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio - [Your Name]</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the active tab */
+        .tab-button.active {
+            border-color: #2563EB; /* blue-600 */
+            color: #2563EB; /* blue-600 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-5xl p-6 md:p-12">
+
+        <!-- Header/Profile Section -->
+        <header class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10 mb-10">
+            <!-- Profile Image -->
+            <img 
+                src="https://placehold.co/160x160/e2e8f0/334155?text=Your+Photo" 
+                alt="Profile Photo" 
+                class="w-40 h-40 rounded-full shadow-md object-cover"
+                onerror="this.src='https://placehold.co/160x160/e2e8f0/334155?text=Photo'; this.onerror=null;"
+            >
+            
+            <!-- Profile Info -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-900">Your Name Here</h1>
+                <p class="text-xl text-blue-700 mt-1">PhD Candidate in [Your Field]</p>
+                <p class="text-lg text-gray-600 mt-2">[Your University or Institution]</p>
+                
+                <!-- Links (Email, GitHub, Scholar, etc.) -->
+                <div class="flex justify-center md:justify-start space-x-4 mt-4 text-gray-600">
+                    <!-- Email -->
+                    <a href="mailto:your.email@example.com" class="hover:text-blue-600" title="Email">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 11.884l7.997-6M2 18h16V5l-8 5-8-5v13z"></path></svg>
+                    </a>
+                    <!-- Google Scholar -->
+                    <a href="#" class="hover:text-blue-600" title="Google Scholar">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 13V5.111c0-1.125.6-2.111 1.519-2.632l4.981-2.768a1.6 1.6 0 011 0l4.981 2.768c.919.52 1.519 1.507 1.519 2.632V13h-3V6.265l-4-2.223-4 2.223V13H5zm-3 1h16v2H2v-2zm16-7.111V14h-1V6.265l.5-.278.5.278zM4 14V6.265l.5-.278.5.278V14H4z"></path></svg>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="#" class="hover:text-blue-600" title="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.816c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.853 0 1.338-.012 2.419-.012 2.747 0 .267.18.577.688.48C17.135 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="#" class="hover:text-blue-600" title="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.389 0-1.601 1.086-1.601 2.207v4.248H8.014V8h3.528v1.623h.05c.49-.922 1.694-1.89 3.48-1.89 3.722 0 4.408 2.45 4.408 5.636V16.338zM4.17 6.338a2.17 2.17 0 11-4.34 0 2.17 2.17 0 014.34 0zM6.338 16.338H1.992V8h4.346V16.338zM18.338 0H1.662C.746 0 0 .746 0 1.662v16.676C0 19.254.746 20 1.662 20h16.676C19.254 20 20 19.254 20 18.338V1.662C20 .746 19.254 0 18.338 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="flex flex-wrap border-b border-gray-300 mb-8">
+            <button class="tab-button py-3 px-5 text-gray-600 hover:text-blue-600 border-b-2 border-transparent active" onclick="showTab('about', this)">
+                About Me
+            </button>
+            <button class="tab-button py-3 px-5 text-gray-600 hover:text-blue-600 border-b-2 border-transparent" onclick="showTab('news', this)">
+                News
+            </button>
+            <button class="tab-button py-3 px-5 text-gray-600 hover:text-blue-600 border-b-2 border-transparent" onclick="showTab('publications', this)">
+                Publications
+            </button>
+            <button class="tab-button py-3 px-5 text-gray-600 hover:text-blue-600 border-b-2 border-transparent" onclick="showTab('blog', this)">
+                Blog
+            </button>
+        </nav>
+
+        <!-- Content Sections -->
+        <main>
+            <!-- About Me Content -->
+            <section id="content-about" class="tab-content space-y-6">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Biography</h2>
+                <p class="text-lg leading-relaxed">
+                    Welcome to my page! I am a [Your Title] at [Your Institution], specializing in [Your Field]. 
+                    My research focuses on [Your specific research area 1], [Your specific research area 2], and 
+                    [Your specific research area 3]. I am passionate about using [Your methods/technology] to 
+                    solve challenging problems in [Your broader domain].
+                </p>
+                <p class="text-lg leading-relaxed">
+                    I received my [Your Degree] from [Your Previous University]. Before that, I worked as a 
+                    [Previous Role] at [Previous Company/Institution]. When I'm not in the lab, I enjoy 
+                    [Your Hobby 1] and [Your Hobby 2].
+                </p>
+
+                <h3 class="text-2xl font-semibold text-gray-800 pt-4">Research Interests</h3>
+                <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                    <li>Interest 1: e.g., Machine Learning Interpretability</li>
+                    <li>Interest 2: e.g., Natural Language Processing</li>
+                    <li>Interest 3: e.g., Human-Computer Interaction</li>
+                    <li>Interest 4: e.g., Computational Social Science</li>
+                </ul>
+            </section>
+
+            <!-- News Content -->
+            <section id="content-news" class="tab-content hidden space-y-5">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">News & Updates</h2>
+                
+                <div class="border-l-4 border-blue-500 pl-4 py-2">
+                    <p class="text-sm text-gray-500">October 2025</p>
+                    <p class="text-lg">I will be presenting our paper "[Paper Title]" at [Conference Name] in [Location]!</p>
+                </div>
+
+                <div class="border-l-4 border-gray-300 pl-4 py-2">
+                    <p class="text-sm text-gray-500">September 2025</p>
+                    <p class="text-lg">Our latest paper, "[Paper Title]", was accepted to [Journal/Conference Name].</p>
+                </div>
+                
+                <div class="border-l-4 border-gray-300 pl-4 py-2">
+                    <p class="text-sm text-gray-500">July 2025</p>
+                    <p class="text-lg">I was awarded the [Award Name or Grant]. Very grateful for the support!</p>
+                </div>
+
+                <div class="border-l-4 border-gray-300 pl-4 py-2">
+                    <p class="text-sm text-gray-500">May 2025</p>
+                    <p class="text-lg">Started an internship at [Company/Lab Name] as a [Role].</p>
+                </div>
+            </section>
+
+            <!-- Publications Content -->
+            <section id="content-publications" class="tab-content hidden space-y-6">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Publications</h2>
+                <p class="text-lg">Here you can list your publications. You can add links to the PDF, code, or presentation.</p>
+
+                <div class="space-y-6">
+                    <!-- Example Publication Entry -->
+                    <div class="leading-relaxed">
+                        <p class="text-lg">
+                            [1] Author, A., <strong>Your Name</strong>, & Colleague, C. (2025). "A Very Important Paper Title About a Great Discovery." 
+                            <em>Journal of Significant Research, 10</em>(2), 123-145.
+                        </p>
+                        <div class="flex space-x-4 mt-1">
+                            <a href="#" class="text-blue-600 font-medium hover:underline">[PDF]</a>
+                            <a href="#" class="text-blue-600 font-medium hover:underline">[Code]</a>
+                            <a href="#" class="text-blue-600 font-medium hover:underline">[Slides]</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Example Publication Entry -->
+                    <div class="leading-relaxed">
+                        <p class="text-lg">
+                            [2] <strong>Your Name</strong>, & Author, B. (2024). "Another Interesting Study on a Different Topic." 
+                            In <em>Proceedings of the International Conference on Things (ICT '24)</em>, (pp. 42-51).
+                        </p>
+                        <div class="flex space-x-4 mt-1">
+                            <a href="#" class="text-blue-600 font-medium hover:underline">[PDF]</a>
+                            <a href="#" class="text-blue-600 font-medium hover:underline">[Poster]</a>
+                        </div>
+                    </div>
+
+                    <!-- Example Publication Entry -->
+                    <div class="leading-relaxed">
+                        <p class="text-lg">
+                            [3] Researcher, R., <strong>Your Name</strong>, & Advisor, A. (2023). "My First Paper About Something Cool." 
+                            <em>Workshop on Preliminary Ideas (WPI '23)</em>.
+                        </p>
+                        <div class="flex space-x-4 mt-1">
+                            <a href="#" class="text-blue-600 font-medium hover:underline">[PDF]</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Content -->
+            <section id="content-blog" class="tab-content hidden space-y-8">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Blog</h2>
+
+                <!-- Blog Post 1 -->
+                <article class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+                        <a href="#" class="hover:text-blue-600">Blog Post Title 1: A Deep Dive into [Topic]</a>
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">Posted on October 20, 2025</p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        This is a short excerpt from the blog post. Here you can write a few sentences 
+                        to summarize your thoughts, introduce a new concept, or discuss a recent paper 
+                        you read...
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read more &rarr;</a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+                        <a href="#" class="hover:text-blue-600">Blog Post Title 2: My Experience at [Conference]</a>
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">Posted on September 15, 2025</p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        A summary of my key takeaways from the conference. I attended several interesting
+                        talks and had great discussions about...
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read more &rarr;</a>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 mt-12 py-6 border-t border-gray-200">
+        &copy; <script>document.write(new Date().getFullYear())</script> Your Name. All rights reserved.
+    </footer>
+
+    <!-- JavaScript for Tab Functionality -->
+    <script>
+        function showTab(tabName, clickedButton) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+                tabContent.classList.add('hidden');
+            });
+
+            // Deactivate all tab buttons
+            document.querySelectorAll('.tab-button').forEach(function(button) {
+                button.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById('content-' + tabName).classList.remove('hidden');
+            
+            // Activate the clicked button
+            clickedButton.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
