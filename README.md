@@ -1,3 +1,5 @@
 # Personal Webpage
 
-Very simple, contains a index.html which is used to create my website. Need to refine my html knowledge currently done with Gemini's help oops :)
+Pretty basic webpage done with help of Gemini oops! 🙊
+Upload Profile Photo in JPEG format
+Create Blog Posts as HTML webpages?
