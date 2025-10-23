@@ -1,4 +1,4 @@
 # Personal Webpage
 
 Pretty basic webpage done with help of Gemini oops! 🙊  
-Create Blog Posts as HTML webpages?  
+Create folder to store blog posts as HTML webpages?  
